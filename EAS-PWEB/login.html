@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div id="error"></div>
+    <form>
+        <label for="id">NRP</label>
+        <input id="id_user" name="id" type="number" placeholder="1092847123">
+        <label for="id">Password</label>
+        <input id="password_user" name="password" type="password" placeholder="Password">
+        <button type="button" onclick="loginPost()">Submit</button>
+    </form>
+
+    <script>
+        const loginPost = () => {
+            $.ajax({
+                url: "/login.php",
+                method: "POST",
+                data: {
+                    "id": $("#id_user").val(),
+                    "password": $("#password_user").val(),
+                },
+                success: (response) => {
+                    let res = JSON.parse(response);
+                    console.log(res);
+                    if(res.error == 404) {
+                        $("#error").html("User not found.")
+                    } else if (res.error == 500) {
+                        $("#error").html("User has no role.")
+                    } else {
+                        if(res.role == "admin") {
+                            window.location = "/admin"
+                        } else if (res.role == "siswa") {
+                            window.location = "/siswa"
+                        }
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>

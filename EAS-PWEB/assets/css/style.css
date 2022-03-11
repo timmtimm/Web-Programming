@@ -1,0 +1,8 @@
+.dataTables_wrapper .dataTables_length{
+    margin-bottom: 2rem;
+}
+
+.dataTables_wrapper .dataTables_length select{
+    border-radius: 8px;
+    border: 1px solid gray;
+}

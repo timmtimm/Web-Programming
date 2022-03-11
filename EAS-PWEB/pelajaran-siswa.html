@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Jadwal Pelajaran - SMA Pagi Sore</title>
+</head>
+<body>
+    <main class="grid grid-cols-12 gap-x-20">
+    <!-- sidebar  -->
+      <div class="col-span-3 flex flex-col h-screen px-3 py-4 space-y-8 pl-5" style="background: #3E8CFF;">
+          <div class="flex items-center space-x-3">
+              <img class="block w-16" src="assets/img/logo.png" alt="Logo Sekolah">
+              <div class="text-white flex flex-col">
+                  <span class="text-lg">Siswa</span>
+                  <span class="font-bold text-xl">SMA Pagi Sore</span>
+              </div>
+          </div>
+          <ul class="text-white space-y-2 text-lg pl-3">
+            <ul class="text-white space-y-2 text-lg">
+              <li class="space-x-1"><img class="inline-block" src="assets/img/jadwal-pelajaran.png" alt=""><span class="inline-block text-white font-bold">Jadwal Pelajaran</span></li>
+              <li class="space-x-1"><img class="inline-block" src="assets/img/daftar-materi.png" alt=""> <span class="inline-block text-gray-400 font-bold">Daftar Materi</span></li>
+              <li class="space-x-1"><img class="inline-block" src="assets/img/daftar-tugas.png" alt=""><span class="inline-block text-gray-400 font-bold">Daftar Tugas</span></li>
+              <li class="space-x-1"><img class="inline-block" src="assets/img/nilai-saya.png" alt=""><span class="inline-block text-gray-400 font-bold">Nilai Saya</span></li>
+              <li class="space-x-1"><img class="inline-block" src="assets/img/daftar-guru.png" alt=""><span class="inline-block text-gray-400 font-bold">Daftar Guru</span></li>
+          </ul>
+      </div>
+    <!-- main content  -->
+      <div class="col-span-9 font-semibold mr-10 space-y-2 min-h-screen">
+        <!-- header  -->
+        <h1 class="text-3xl mt-8">Jadwal Pelajaran Kelas XII A</h1>
+        <div class="flex justify-between items-center text-lg ">
+            <p class="text-gray-400">Minggu ke-30</p>
+            <div class="flex items-center space-x-3 ">
+                <span>John Doe</span>
+                <img class="block rounded-full" src="./assets/img/foto-john-doe.png" alt="">
+            </div>
+        </div>
+         <!-- Table -->
+        <div class="mt-20 bg-red-400 mx-auto bg-white rounded-sm border border-gray-200">
+            <div class="p-3">
+                <div class="">
+                    <table class="table-auto w-full">
+                        <thead class="text-xs font-semibold uppercase text-gray-400 bg-gray-50">
+                            <tr>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Jam Pelajaran</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Waktu</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Mata Pelajaran</div>
+                                </th>
+                                <th class="p-2 whitespace-nowrap">
+                                    <div class="font-semibold text-left">Guru</div>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-sm divide-y divide-gray-100">
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="font-medium text-gray-800">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">07.20 - 08.00</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Bahasa Indonesia</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Cory Palmer</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="font-medium text-gray-800">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">07.20 - 08.00</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Bahasa Indonesia</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Cory Palmer</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="font-medium text-gray-800">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">07.20 - 08.00</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Bahasa Indonesia</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Cory Palmer</div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="font-medium text-gray-800">1</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">07.20 - 08.00</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Bahasa Indonesia</div>
+                                </td>
+                                <td class="p-2 whitespace-nowrap">
+                                    <div class="text-left">Cory Palmer</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
+  </main>
+</body>
+</html>

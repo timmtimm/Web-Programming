@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+        *
+        {
+            font-family: 'Ubuntu', Serif;
+        }
+
+        .judul
+        {
+            font-size: 36px;
+            text-align: center;
+            padding: 25px;
+            background-color: #2E4557;
+            color: white;
+        }
+
+        .image-center
+        {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        nav
+        {
+            text-align: center;
+            background-color: #73838F;
+            padding: 5px;
+            position: sticky;
+            top: 0;
+        }
+
+        nav a
+        {
+            font-size: 18px;
+            font-weight: 400;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav a:hover
+        {
+            font-weight: bold;
+        }
+
+        nav li
+        {
+            display: inline;
+            list-style-type: none;
+            margin-right: 20px;
+        }
+
+        .flex-container
+        {
+            display: flex;
+        }
+
+        .flex-child-left
+        {
+            flex: 1;
+            font-size: 40px;
+            margin: 4px;
+            color: white;
+            background-color: #2E4557;
+        }
+
+        .flex-child-right
+        {
+            flex: 4;
+            font-size: 20px;
+            margin: 4px;
+            border: 3px solid #73838F;
+        }
+
+        .row
+        {
+            display: flex;
+        }
+
+        .column
+        {
+            flex: 30%;
+            padding: 5px;
+        }
+
+        footer
+        {
+            padding: 25px;
+            margin: 5px;
+            color: white;
+            background-color: #4C575F;
+            text-align: center;
+        }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Timotius Wirawan</title>
+</head>
+
+<body>
+    <header>
+        <div class="judul">
+            <h1>Curiculum Vitae</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#profil">About Me</a></li>
+                <li><a href="#pendidikan">Education</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href='#pengalaman'>Experience</a></li>
+            </ul>
+        </nav>
+    
+        <img src="assets/7511.jpg" style='height: 675px; width: 1200px; object-fit: contain; padding: 15px;' class="image-center">
+
+        <div id="profil" class="flex-container">
+            <div class="flex-child-left">
+                <p style="text-align:center"> About Me </p>
+            </div>
+            
+            <div class="flex-child-right">
+                <p style="text-align:center">
+                    Hello, my name is Timotius Wirawan. I was born in Bandar Lampung on October 25, 2000.
+                    I'm currently a Undergraduate student majoring in Informatics at Sepuluh Nopember Institute of Technology.
+                    I have a high enthusiasm for learning and love to learn new things.
+                    I am open if you want to contact me, you can use the social media listed below.
+                </p>
+            </div>
+        </div>
+
+        <div id="pendidikan" class="flex-container">
+            <div class="flex-child-left">
+                <p style="text-align:center"> Education </p>
+            </div>
+            
+            <div class="flex-child-right">
+                <dl>
+                    <dt>Sepuluh Nopember Institute of Technology</dt>
+                    <dd>2019 - current</dd>
+                    <dd>Undergraduate Informatics Student</dd>
+                    <br>
+                    <dt>Fransiskus Bandarlampung Senior High School</dt>
+                    <dd>2016 - 2019</dd>
+                    <dd>Science major</dd>
+                    <br>
+                    <dt>Fransiskus Tanjungkarang junior High School</dt>
+                    <dd>2013 - 2016</dd>
+                    <br>
+                    <dt>Xaverius Way Halim Elementary School</dt>
+                    <dd>2010 - 2013</dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="skill" class="flex-container">
+            <div class="flex-child-left">
+                <p style="text-align:center"> Skill </p>
+            </div>
+            
+            <div class="flex-child-right">
+                <ul>
+                    <li>C</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="pengalaman" class="flex-container">
+            <div class="flex-child-left">
+                <p style="text-align:center"> Experience </p>
+            </div>
+             
+            <div class="flex-child-right">
+                <dl>
+                    <dt>Staff of Dalam Negeri at Himpunan Mahasiswa Teknik Computer - Informatika (HMTC)</dt>
+                    <dd>2021 - current</dd>
+                    <br>
+                    <dt>Expert Staff of Schematics REEVA at Schematics</dt>
+                    <dd>2021 - current</dd>
+                    <br>
+                    <dt>Staff of Public Relation at Catholic Comunity Cup (3C)</dt>
+                    <dd>2019 - 2020</dd>
+                </dl>
+            </div>
+        </div>
+    </header>
+
+    <footer>
+        <p>Come to my social media</p>
+
+        <div class="row">
+            <div class="column">
+                <a href="https://github.com/timmtimm" target="_blank"><img src="assets/github-brands.png" style="width:50px"></a>
+            </div>
+            <div class="column">
+                <a href="https://www.linkedin.com/in/timotius-wirawan-41897221b/" target="_blank"><img src="assets/linkedin-brands.png" style="width:50px"></a>
+            </div>
+            <div class="column">
+                <a href="mailto:timotiuswirawan38@gmail.com" target="_blank"><img src="assets/envelope-solid.png" style="width:50px"></a>
+            </div>
+            <div class="column">
+                <a href="https://api.whatsapp.com/send?phone=+6285758404128" target="_blank"><img src="assets/whatsapp-brands.png" style="width:50px"></a>
+            </div>
+            <div class="column">
+                <a href="https://www.instagram.com/timotius.wirawan/" target="_blank"><img src="assets/instagram-brands.png" style="width:50px"></a>
+            </div>
+        </div>
+
+        <p>Created with ♥ by Timotius Wirawan</p>
+    </footer> 
+</body>
+</html>

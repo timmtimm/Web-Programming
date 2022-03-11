@@ -1,0 +1,55 @@
+{
+    "FACULTY OF SCIENCE AND DATA ANALYTICS (SCIENTICS)": [
+        "Physics",
+        "Mathematics",
+        "Statistics",
+        "Chemistry",
+        "Biology",
+        "Actuaria"
+    ],
+    "FACULTY OF MARINE TECHNOLOGY (MARTECH)": [
+        "Naval Architecture and Shipbuilding Engineering",
+        "Marine Engineering",
+        "Ocean Engineering",
+        "Sea Transportation Engineering"
+    ],
+    "FACULTY OF INDUSTRIAL TECHNOLOGY AND SYSTEMS ENGINEERING (INDSYS)": [
+        "Mechanical Engineering",
+        "Chemical Engineering",
+        "Physics Engineering",
+        "Systems and Industrial Engineering",
+        "Material Engineering"
+    ],
+    "FACULTY OF INTELLIGENT ELECTRICAL AND INFORMATICS TECHNOLOGY (ELECTICS)": [
+        "Electrical Engineering",
+        "Biomedical Engineering",
+        "Computer Engineering",
+        "Informatics",
+        "Information Systems",
+        "Information Technology"
+    ],
+    "FACULTY OF CIVIL, PLANNING, AND GEO ENGINEERING (CIVPLAN)": [
+        "Civil Engineering",
+        "Architecture",
+        "Environmental Engineering",
+        "Regional and Urban Planning",
+        "Geomatics Engineering",
+        "Geophysics Engineering"
+    ],
+    "FACULTY OF CREATIVE DESIGN AND DIGITAL BUSINESS (CREABIZ)": [
+        "Industrial Product Design",
+        "Interior Design",
+        "Visual Communication Design",
+        "Business Management",
+        "Developmental Studies",
+        "Technology Management"
+    ],
+    "FACULTY OF VOCATIONAL (VOCATION)": [
+        "Civil Infrastructure Engineering",
+        "Industrial Mechanical Engineering",
+        "Automation Electronic Engineering",
+        "Industrial Chemical Engineering",
+        "Instrumentation Engineering",
+        "Business Statistics"
+    ]
+}

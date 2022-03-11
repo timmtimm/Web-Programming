@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulir Validasi Vaksin</title>
+</head>
+<body>
+    <nav>
+        <img src="https://www.its.ac.id/wp-content/uploads/2017/10/logo-its-1.png" alt="Logo ITS">
+    </nav>
+    <br>
+    <h1>Formulir Pendataan Vaksinasi</h1>
+    <div class="container">
+        <form name="formulir" class="card" onsubmit="return validateForm()" action="">
+            <div class="form-group my-1">
+                <label for="name">Nama Mahasiswa</label>
+                <br>
+                <input type="text" id="name" placeholder="Nama Lengkap">
+            </div>
+    
+            <div class="form-group my-1">
+                <label for="nrp">NRP Mahasiswa</label>
+                <br>
+                <input type="text" id="nrp" minlength="10" maxlength="16" placeholder="NRP Lengkap">
+            </div>
+    
+            <div class="form-group my-1">
+                <label for="email">Email</label>
+                <br>
+                <input type="email" id="email" placeholder="Email aktif">
+            </div>
+    
+            <div class="form-group my-1">
+                <label for="alamat">Alamat</label>
+                <br>
+                <textarea name="alamat" id="alamat" cols="40" rows="5" placeholder="Alamat Domisili"></textarea>
+            </div>
+    
+            <div class="form-group my-1">
+                <label for="departemen">Departemen</label>
+                <br>
+                <select name="departemen" id="departemen">
+                    <option value="0">Pilih Departemen</option>
+                    <option value="1">FSAD - Fisika</option>
+                    <option value="2">FSAD - Matematika</option>
+                    <option value="3">FSAD - Statistika</option>
+                    <option value="4">FSAD - Kimia</option>
+                    <option value="5">FSAD - Biologi</option>
+                    <option value="6">FSAD - Aktuaria</option>
+                    <option value="7">FTK - Teknik Perkapalan</option>
+                    <option value="8">FTK - Teknik Sistem Perkapalan</option>
+                    <option value="9">FTK - Teknik Kelautan</option>
+                    <option value="10">FTK - Teknik Transportasi Laut</option>
+                    <option value="11">FTIRS - Teknik Mesin</option>
+                    <option value="12">FTIRS - Teknik Kimia</option>
+                    <option value="13">FTIRS - Teknik Fisika</option>
+                    <option value="14">FTIRS - Teknik Industri</option>
+                    <option value="15">FTIRS - Teknik Material</option>
+                    <option value="16">FTEIC - Teknik Elektro</option>
+                    <option value="17">FTEIC - Teknik Biomedik</option>
+                    <option value="18">FTEIC - Teknik Komputer</option>
+                    <option value="19">FTEIC - Teknik Informatika</option>
+                    <option value="20">FTEIC - Sistem Informasi</option>
+                    <option value="21">FTEIC - Teknologi Informasi</option>
+                    <option value="22">FTSPK - Teknik Sipil</option>
+                    <option value="23">FTSPK - Arsitektur</option>
+                    <option value="24">FTSPK - Teknik Lingkungan</option>
+                    <option value="25">FTSPK - Perencanaan Wilayah dan Kota</option>
+                    <option value="26">FTSPK - Teknik Geomatika</option>
+                    <option value="27">FTSPK - Teknik Geofisika</option>
+                    <option value="28">FDKBD - Desain Produk Industri</option>
+                    <option value="29">FDKBD - Desain Interior</option>
+                    <option value="30">FDKBD - Desain Komunikasi Visual</option>
+                    <option value="31">FDKBD - Manajemen Bisnis</option>
+                    <option value="32">FDKBD - Studi Pembangunan</option>
+                    <option value="33">FDKBD - Manajemen Teknologi</option>
+                    <option value="34">FV - Teknik Infrastruktur Sipil</option>
+                    <option value="35">FV - Teknik Mesin Industri</option>
+                    <option value="36">FV - Teknik Elektro Otomasi</option>
+                    <option value="37">FV - Teknik Kimia Industri</option>
+                    <option value="38">FV - Teknik Instrumentasi</option>
+                    <option value="39">FV - Statistika Bisnis</option>
+                </select>
+            </div>
+    
+            <div class="form-group my-1">
+                <label for="vaksin">Status Vaksin</label>
+                <br>
+                <select name="vaksin" id="vaksin">
+                    <option value="0">Pilih Status Vaksin</option>
+                    <option value="1">Belum Divaksin</option>
+                    <option value="2">Sudah Divaksin Dosis ke-1</option>
+                    <option value="3">SUdah Divaksin Dosis ke-2</option>
+                </select>
+            </div>
+    
+            <br>
+            <div><button class="btn btn-primary">Submit</button></div>
+            
+        </form>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #FDD961;
+}
+
+.content
+{
+    background-color: white;
+    padding: 4rem 1rem 4rem 1rem;
+    margin-top: 225px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.05);
+}
+
+.signin-text
+{
+    font-style: normal;
+    font-weight: bold !important;
+}
+
+.form-control
+{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: black !important;
+    border-style: solid !important;
+    border-width: 0 0 1px 0 !important;
+    padding: 0px !important;
+    border-radius: 0;
+    background-color: white;
+    background-clip: padding-box;
+}
+
+.form-control:focus
+{
+    background-color: white;
+    border-color: white;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-class
+{
+    border-color: #FDD961;
+}
+
+.btn-class:hover
+{
+    background-color: #FDD961;
+    color: white;
+}
